@@ -1,0 +1,22 @@
+### Spring properties
+# Service registers under this name
+spring:
+  application:
+    name: auction-seller-microservice
+
+# Discovery Server Access
+eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:8761/eureka/
+        
+#spring.data.mongodb.host: mongodb
+
+# HTTP Server (Tomcat) Port
+server: 
+  port: 8081
+
+# Disable Spring Boot's "Whitelabel" default error page, so we can use our own
+error:
+  whitelabel:
+    enabled: false
